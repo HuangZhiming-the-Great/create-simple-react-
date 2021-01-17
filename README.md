@@ -1,3 +1,13 @@
+## 使用
+```bash
+  git clone https://github.com/HuangZhiming-the-Great/create-simple-react-.git
+  cd create-simple-react-
+  yarn
+  yarn build
+  yarn dev
+```
+接下来打来浏览器，输入：localhost:9000。就可以看到hello world!了。
+
 ## 这个是一个网上自学的项目
 - 网上资料：
   [一篇自己搭建react脚手架的文章](https://blog.csdn.net/design_lu/article/details/94856399)
