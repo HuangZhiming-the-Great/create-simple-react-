@@ -6,8 +6,15 @@
   yarn build
   yarn dev
 ```
-接下来打来浏览器，输入：localhost:9000。就可以看到hello world!了。
+接下来打开浏览器，网址栏输入：“localhost:9000”。就可以看到hello world!了。
 
+## 功能
+### 已经有的功能：
+1. @babel/react 和 @babel/env
+2. webpack热加载
+   - css-loader 
+   - url-loader
+3. 
 ## 这个是一个网上自学的项目
 - 网上资料：
   [一篇自己搭建react脚手架的文章](https://blog.csdn.net/design_lu/article/details/94856399)
@@ -18,3 +25,6 @@
 2. webpack编译遇到问题
    
    这个[总结性文章](cnblogs.com/jeacy/p/13864454.html)可以很好的解决问题。
+
+## 后续优化
+- 这里有一个[文章](https://segmentfault.com/a/1190000023211627),讲的更加的详细，提到了生产环境和开发环境。可以为以后进一步的增强内容做参考。
