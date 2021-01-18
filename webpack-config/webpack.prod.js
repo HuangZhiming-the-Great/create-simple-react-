@@ -1,13 +1,13 @@
-const { merge } = require('webpack-merge');
-const base = require('./webpack.base');
-const webpack = require('webpack');
+const { merge } = require('webpack-merge')
+const base = require('./webpack.base')
+const webpack = require('webpack')
 
-module.exports= merge(base, {
-  mode: "production",
-  devtool: "source-map",
+module.exports = merge(base, {
+  mode: 'production',
+  devtool: 'source-map',
   plugins: [
     new webpack.DefinePlugin({
-      "process.env.NODE_ENV": JSON.stringify("production")
+      'process.env.NODE_ENV': JSON.stringify('production')
     })
   ]
 })
