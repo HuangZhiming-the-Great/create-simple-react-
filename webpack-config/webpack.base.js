@@ -5,11 +5,10 @@ const webpack = require('webpack');
 
 
 module.exports = {
-  mode: 'development',
-  entry: './src/foo.js',
+  entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname,'dist'),
-    filename: 'foo.bundle.js'
+    path: path.resolve(__dirname,'../dist'),
+    filename: 'index.bundle.js'
   },
   plugins:[
     new HtmlWebpackPlugin({ template: './index.html'}),
@@ -17,7 +16,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin()
   ],
   module: {
-    rules: [
+    rules: [//webpack的各种打包规则
       {
         test: /\.m?js$/,
         exclude: /(node_modules|bower_components)/,
@@ -44,10 +43,5 @@ module.exports = {
         ]
       }
     ]
-  },
-  devServer: {
-    contentBase: path.join(__dirname,'dist'),
-    compress: true,
-    port: 9000
   }
 }
